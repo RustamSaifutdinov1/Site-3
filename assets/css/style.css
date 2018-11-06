@@ -239,7 +239,7 @@ h1{
 .content{
     font-size:18px;
     padding-bottom:50px;
-    color:#fff;
+    
 }
 h3{
     font-family: 'Open Sans', sans-serif;
@@ -357,7 +357,7 @@ h3{
 
 }
 
-.bg-game{
+/*.bg-game{
     background: url('https://www.actugaming.net/wp-content/uploads/2018/08/red-dead-redemption-2-1.jpg') center bottom no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -444,4 +444,4 @@ h3{
     right: 0;
     top: 0;
     z-index: 0;
-}
+}*/
