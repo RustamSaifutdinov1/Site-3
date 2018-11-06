@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    background: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #004697;
+}
+
+.container {
+    
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.img-responsive {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}
+
+@media(max-width: 1160px) {
+    .container {
+        width: 100%;
+    }
+}
+
+#main-header {
+    background: #FFF;
+    padding: 20px 0;
+}
+
+#main-header .container {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#main-header .logotype {
+    width: 100px;
+}
+
+#main-header .info {
+    margin-left: 20px;
+}
+
+#main-header h1.name {
+    margin: 0;
+    padding: 0;
+}
+
+#main-navigation {
+    background: #FFF;
+    border-bottom: 2px solid #D2242F;
+}
+
+#main-navigation ul {
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#main-navigation li {
+    width: 25%;
+}
+
+#main-navigation li>a {
+    color: #333;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+#main-navigation li:hover>a {
+    background: #D2242F;
+    color: #FFF;
+}
+
+#main-navigation li .submenu {
+    background: #FFF;
+    /* border: 1px solid #004697; */
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+    display: none;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    /* right: 0; */
+    z-index: 10000;
+}
+
+#main-navigation li:hover .submenu {
+    display: block;
+}
+
+#main-footer {
+    background: #333;
+    color: #EFEFEF;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+main section {
+    background: #FFF;
+    overflow: hidden;
+}
+
+.block-items,
+.block-videos {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /*margin-left: -10px;
+    margin-right: -10px;*/
+}
+
+.block-item,
+.block-video {
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    max-width: calc(25% - 20px);
+}
+.block-item .image svg{
+    height: 200px;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.block-video {
+    border: 1px solid #CCC;
+    padding: 2px;
+    position: relative;
+}
+
+.block-video:before {
+    background: #000;
+    bottom: 2px;
+    content: "";
+    display: block;
+    left: 2px;
+    opacity: .7;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    transition: opacity .15s ease-in;
+    z-index: 1;
+}
+
+.block-video:hover:before {
+    opacity: 0;
+}
+
+.block-video iframe {
+    height: 150px;
+    width: 100%;
+    z-index: 0;
+}
+
+@media(max-width: 960px) {
+    .block-item,
+    .block-video {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media(max-width: 768px) {
+    .block-item,
+    .block-video {
+        width: calc(50% - 20px);
+    }
+}
+
+@media(max-width: 478px) {
+    .block-item,
+    .block-video {
+        width: calc(100% - 20px);
+    }
+}
+
+.block-item a {
+    border: 1px solid #EFEFEF;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s ease-in;
+}
+
+.block-item a .title {
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.block-item a:hover {
+    border-color: #CCC;
+    color: #004697;
+}
+.block-item a .image{
+    display: block;
+}
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size:48px;
+    
+    
+}
+.slogan{
+    font-size:24px;
+}
+.content{
+    font-size:18px;
+    padding-bottom:50px;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+   
+    text-align: center;
+    font-size:38px;
+    padding-top: 20px
+}
+#carouselExampleIndicators{
+    padding-top:15px;   
+}
+
+
+.block-inner-slider{
+    /* align-items: flex-start;
+    display: flex;
+    justify-content: space-between;*/
+    
+    
+}
+.block-inner-slider .images{
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 40px
+}
+.block-inner-slider .images .image{
+    height: 400px;
+    text-align: center;
+}
+.block-inner-slider .images .image img{
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    width: auto;
+}
+.block-inner-slider .description{
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+/*----block-games----*/
+.block-games{
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow: hidden;
+}
+.block-games .block-game{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 20px;
+    justify-content: space-between;
+    text-decoration: none;
+
+    width: calc(25% - 20px);
+}
+.block-games .block-game .image{
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.block-games .block-game .image svg{
+    height: 200px;
+    vertical-align: bottom;
+    width: 100%;
+
+}
+.block-games .block-game .title{
+    border: 1px solid #CCC;
+    border-top: none;
+    color: #333;
+    display: block;
+    flex-grow: 1;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.block-games .block-game:hover .title{
+    color: #004697;
+}
+
+/*----block-youtubes----*/
+
+.block-youtubes{
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow: hidden;
+}
+.block-youtubes .block-youtube{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 20px;
+    justify-content: space-between;
+    text-decoration: none;
+
+    width: calc(25% - 20px);
+}
+
+.block-youtubes .block-youtube svg{
+    height: 200px;
+    vertical-align: bottom;
+    width: 100%;
+
+}
