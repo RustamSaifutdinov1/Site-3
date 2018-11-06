@@ -311,17 +311,19 @@ h3{
 
 }
 .block-games .block-game .title{
-    border: 1px solid #CCC;
+    
+    /*border: 1px solid #CCC;*/
     border-top: none;
-    color: #333;
+    color: rgb(129, 127, 139);
     display: block;
     flex-grow: 1;
     margin: 0;
     padding: 10px;
     text-align: center;
 }
+
 .block-games .block-game:hover .title{
-    color: #004697;
+    color:rgb(60, 69, 82);
 }
 
 /*----block-youtubes----*/
@@ -351,4 +353,66 @@ h3{
     vertical-align: bottom;
     width: 100%;
 
+}
+
+.bg-game{
+    background: url('https://s3.envato.com/files/242547089/preview.jpg') center bottom no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    position: relative;
+}
+.bg-game .container{
+    position: relative;
+    z-index: 1;
+}
+.bg-game h2.title{
+    color:rgb(163,162,167);
+}
+.bg-game::before{
+    background: rgba(0,0,0,.5);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.inner-bg h2.title{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    padding: 100px 40px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.inner-bg h2.title::before{
+    background: rgba(0,0,0,.5);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+.inner-bg h2.title span{
+    position: relative;
+    z-index: 1;
+}
+
+.inner-bg-horror h2.title{
+    background-image: url('../upload/game-bg.jpg');
+    color: #FFF;
+}
+.inner-bg-strategy h2.title{
+    background-image: url('../upload/strategy-bg.png');
+    color: #FFF;
 }
