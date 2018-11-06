@@ -239,6 +239,7 @@ h1{
 .content{
     font-size:18px;
     padding-bottom:50px;
+    color:#fff;
 }
 h3{
     font-family: 'Open Sans', sans-serif;
@@ -314,16 +315,17 @@ h3{
     
     /*border: 1px solid #CCC;*/
     border-top: none;
-    color: rgb(129, 127, 139);
+    color: #878787;
     display: block;
     flex-grow: 1;
     margin: 0;
     padding: 10px;
     text-align: center;
+    font-size:25px
 }
 
 .block-games .block-game:hover .title{
-    color:rgb(60, 69, 82);
+    color:rgb(60,69 ,82 );
 }
 
 /*----block-youtubes----*/
@@ -356,7 +358,7 @@ h3{
 }
 
 .bg-game{
-    background: url('https://s3.envato.com/files/242547089/preview.jpg') center bottom no-repeat;
+    background: url('https://www.actugaming.net/wp-content/uploads/2018/08/red-dead-redemption-2-1.jpg') center bottom no-repeat;
     background-attachment: fixed;
     background-size: cover;
     padding-bottom: 100px;
@@ -368,7 +370,7 @@ h3{
     z-index: 1;
 }
 .bg-game h2.title{
-    color:rgb(163,162,167);
+    color:#fff;
 }
 .bg-game::before{
     background: rgba(0,0,0,.5);
@@ -415,4 +417,31 @@ h3{
 .inner-bg-strategy h2.title{
     background-image: url('../upload/strategy-bg.png');
     color: #FFF;
+}
+
+.bg-video{
+    background: url('https://i1.wp.com/androidkenya.com/wp-content/uploads/2017/04/YouTube.jpg?fit=700%2C394&ssl=1') center bottom no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    position: relative;
+}
+.bg-video .container{
+    position: relative;
+    z-index: 1;
+}
+.bg-video h2.title{
+    color:rgb(163,162,167);
+}
+.bg-video::before{
+    background: rgba(0,0,0,.5);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
 }
